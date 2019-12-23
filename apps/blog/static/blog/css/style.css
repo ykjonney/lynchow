@@ -1,0 +1,119 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    border: 0;
+}
+
+body {
+    background: #fff;
+    color: #666;
+}
+
+html, body, div, dl, dt, dd, ol, ul, li, h1, h2, h3, h4, h5, h6, p, blockquote, pre, button, fieldset, form, input, legend, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #08acee;
+}
+
+button {
+    outline: 0;
+}
+
+img {
+    border: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #666;
+}
+
+a:hover {
+    color: #eee;
+}
+
+.clearfix::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* 必要布局样式css */
+.footer-box {
+    background: #222132;
+    overflow: hidden;
+    width: 100%;
+    color: #888;
+    padding: 30px 0 35px;
+}
+
+.footer-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.footer-links {
+    padding-top: 40px;
+    padding-left: 140px;
+}
+
+.footer-article-item {
+    width: 220px;
+    height: 226px;
+    float: left;
+    margin-right: 40px;
+    line-height: 2;
+    font-size: 14px;
+}
+
+.footer-article-item dt {
+    color: #ccc;
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 2;
+    font-weight: 300;
+}
+
+.footer-article-item dd {
+    line-height: 2;
+}
+
+.footer-article-item dd a {
+    color: #888;
+    transition: all .1s;
+}
+
+.footer-article-item dd a:hover {
+    color: #fff;
+}
+
+.footer-copyright {
+    line-height: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer-copyright p {
+    margin-bottom: 9px;
+    font-size: 14px;
+    color: #888;
+}

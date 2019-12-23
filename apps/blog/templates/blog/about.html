@@ -1,0 +1,63 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block head_title %}关于网站,网站及博主介绍{% endblock %}
+{% block metas %}
+<meta name="description"
+      content="本网站是一个采用django+bootstrap4搭建的个人博客。">
+<meta name="keywords" content="网站About页面,关于网站,关于博主,关于站长">
+{% endblock %}
+
+
+{% block base_content %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8" style="line-height:2">
+            <div class="card rounded-0 border-0 p-3 f-16">
+                <h2 class="font-weight-bold">关于网站</h2>
+                <hr style="margin: .1rem;dashed #333;"/>
+                <ul class="pl-4 ml-2">
+                    <li>本网站是一个个人博客网站,主要用于聊一聊闲白儿,说一说奇闻轶事,不谈工作,不聊技术.</li>
+                </ul>
+                <h2 class="mt-2 font-weight-bold">关于博主</h2>
+                <hr style="margin: .1rem;dashed #333;"/>
+                <ul class="pl-4 ml-2">
+                    <li>人生苦短,我用 Python！</li>
+                    <li>博主主攻Python,顺带学习其他编程语言,目前在杭州某公司担任全栈工程师</li>
+                    <li>Python 技能树：Django/Flask 的 web 框架,requests/scrapy/selenium 为主的爬虫框架,正则表达式/CSS/Xpath/ 等信息提取方式,使用过 Pandas 和 Numpy 做数据分析
+                    </li>
+                    <li>数据库技能树：常用MySQL作为Web后端数据库,MongoDB作为爬虫信息存储,Redis用作缓存</li>
+                    <li>前端技能树：熟悉HTML基本规范,对CSS常规用法了解,JavaScript主要使用jQuery库,熟悉Bootstrap框架</li>
+                    <li>联系邮箱:<a href="qian_chen_jin@163.com">qian_chen_jin@163.com</a></li>
+                </ul>
+                <h2 class="mt-2 font-weight-bold">功能介绍</h2>
+                <hr style="margin: .1rem;dashed #333;"/>
+                <ul class="pl-4 ml-2">
+                    <li>Django自带的后台管理系统,方便对于文章、用户及其他动态内容的管理</li>
+                    <li>文章分类、标签、浏览量统计以及规范的SEO设置</li>
+                    <li>用户认证系统,在Django自带的用户系统的基础上扩展Oauth2.0认证,支持微博、Github等第三方认证</li>
+                    <li>文章评论系统,炫酷的输入框特效,支持MarkDown语法,二级评论结构和回复功能</li>
+                    <li>信息提醒功能,登录和退出提醒,收到评论和回复提醒,信息管理</li>
+                    <li>强大的全文搜索功能,只需要输入关键词就能展现全站与之关联的文章</li>
+                    <li>Django-Redis支持的缓存系统,遵循缓存原则,加速网站打开速度</li>
+                    <li>友情链接和推荐工具网站的展示</li>
+                </ul>
+                <h2 class="mt-2 font-weight-bold">网站支持</h2>
+                <hr style="margin: .1rem;dashed #333;"/>
+                <ul class="pl-4 ml-2">
+                    <li>前端使用Bootstrap + jQuery支持响应式</li>
+                    <li>后端 Python 3.5.2,Django 1.11.12</li>
+                    <li>后台数据库使用MySQL,缓存数据库使用Redis</li>
+                    <li>Bootstrap-Admin用于美化后台管理系统,变成响应式界面</li>
+                    <li>Django-Allauth等用于第三方用户登录</li>
+                    <li>Django-Haystack和jieba用于支持全文搜索</li>
+                    <li>Django-Redis缓存</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            {% include 'blog/tags/base_right.html' %}
+        </div>
+    </div>
+</div>
+{% endblock %}
